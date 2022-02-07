@@ -1,0 +1,113 @@
+﻿<Window x:Class="Calorias.src.view.AnadirDatos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calorias.src.view"
+        mc:Ignorable="d"
+        Title="Añadir Datos" Height="400" Width="530" ResizeMode="CanMinimize" Loaded="WindowLoaded">
+    <Window.Resources>
+        <Style x:Key="BotonAnadir" TargetType="{x:Type Button}">
+            <Setter Property="Button.Content" Value="Añadir"/>
+            <Setter Property="Button.Padding" Value="30,0"/>
+            <Setter Property="Button.Margin" Value="5,0"/>
+            <Setter Property="Button.Height" Value="5,0"/>
+            <Setter Property="Button.HorizontalAlignment" Value="Center"/>
+            <Setter Property="Button.VerticalAlignment" Value="Center"/>
+            <EventSetter Event="Click" Handler="AnadirButton_Click"/>
+        </Style>
+        <Style x:Key="BotonCancelar" TargetType="{x:Type Button}">
+            <Setter Property="Button.Content" Value="Cancelar"/>
+            <Setter Property="Button.Padding" Value="30,0"/>
+            <Setter Property="Button.Height" Value="5,0"/>
+            <Setter Property="Button.Margin" Value="5,0"/>
+            <Setter Property="Button.HorizontalAlignment" Value="Center"/>
+            <Setter Property="Button.VerticalAlignment" Value="Center"/>
+            <EventSetter Event="Click" Handler="CancelarButton_Click"/>
+        </Style>
+        <Style x:Key="BotonAleatorio" TargetType="{x:Type Button}">
+            <Setter Property="Button.Content" Value="Aleatorio"/>
+            <Setter Property="Button.Padding" Value="30,0"/>
+            <Setter Property="Button.Height" Value="5,0"/>
+            <Setter Property="Button.Margin" Value="2,0"/>
+            <Setter Property="Button.HorizontalAlignment" Value="Center"/>
+            <Setter Property="Button.VerticalAlignment" Value="Center"/>
+            <Setter Property="ToolTip" Value="Introduce valores aleatorios"/> 
+            <EventSetter Event="Click" Handler="AleatorioButton_Click"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Background="Aqua">
+            <StackPanel>
+                <TextBlock Text="FECHA" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <DatePicker x:Name="Fecha">
+                
+            </DatePicker>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" Background="Red">
+            <StackPanel>
+                <TextBlock Text="DESAYUNO" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="Desayuno" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="100" TextAlignment="Right" PreviewTextInput="NumberFormatText_PreviewTextInput"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Background="Blue">
+            <StackPanel>
+                <TextBlock Text="APERITIVO" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="Aperitivo" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="100" TextAlignment="Right" PreviewTextInput="NumberFormatText_PreviewTextInput"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Background="Pink">
+            <StackPanel>
+                <TextBlock Text="COMIDA" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="Comida" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="100" TextAlignment="Right" PreviewTextInput="NumberFormatText_PreviewTextInput"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0" Background="Gray">
+            <StackPanel>
+                <TextBlock Text="MERIENDA" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="Merienda" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="100" TextAlignment="Right" PreviewTextInput="NumberFormatText_PreviewTextInput"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Background="Green">
+            <StackPanel>
+                <TextBlock Text="CENA" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="Cena" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="100" TextAlignment="Right" PreviewTextInput="NumberFormatText_PreviewTextInput"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="2" Background="Orange">
+            <StackPanel>
+                <TextBlock Text="OTROS" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="Otros" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="100" TextAlignment="Right" PreviewTextInput="NumberFormatText_PreviewTextInput"/>
+            </StackPanel>
+        </StackPanel>
+        <Button Grid.Column="0" Grid.Row="3" Style="{StaticResource BotonCancelar}"/>
+        <Button Grid.Column="2" Grid.Row="3" Style="{StaticResource BotonAnadir}"/>
+        <Button Grid.Column="0" Grid.Row="0" Style="{StaticResource BotonAleatorio}"/>
+    </Grid>
+</Window>

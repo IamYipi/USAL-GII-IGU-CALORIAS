@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Calorias.App" Collapsed="true">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calorias.Properties.Resources" Collapsed="true">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calorias.Properties.Settings" Collapsed="true">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calorias.src.model.Barra" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIAAAJAAAQAQAAEGIAAAAgCAgAAAyAAAAEgAAACAAAA=</HashCode>
+      <FileName>src\model\Barra.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Calorias.src.model.Fecha_TotalCal" Collapsed="true">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAEEAAAAAAAAAAAAQAAAAEAAAAAAAAA=</HashCode>
+      <FileName>src\model\Fecha_TotalCal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calorias.src.model.Model" Collapsed="true">
+    <Position X="7.25" Y="4.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAACAAAAIAIAEAAAAACBUQAIBAAAEIAAAAAA=</HashCode>
+      <FileName>src\model\Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calorias.src.model.Tipo" Collapsed="true">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAgAgAIAAAA=</HashCode>
+      <FileName>src\model\Tipo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calorias.src.model.ViewModel" Collapsed="true">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAABAAgACAAAJIAKAEAAAAACBEAAIAAAAAQAgIIAA=</HashCode>
+      <FileName>src\model\ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calorias.src.utils.Constantes" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\Constantes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calorias.src.utils.GraficarBarra" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAABwAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\GraficarBarra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calorias.src.view.AnadirDatos" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAQAAAgAAABAAAAAAAACAAAgAAAAAA=</HashCode>
+      <FileName>src\view\AnadirDatos.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Calorias.src.view.Configuracion" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAIAAAKAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>src\view\Configuracion.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Calorias.src.view.GraficosCalorias" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JECAAABQEAAIAAQICiA4ACAgMgBIAFCAAAAIAABiENA=</HashCode>
+      <FileName>src\view\GraficosCalorias.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Calorias.src.view.NoModalCalorias" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAGAAACACAAEIQCABQYAhACARQQACAIgEQAABAAAI=</HashCode>
+      <FileName>src\view\NoModalCalorias.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Struct Name="Calorias.src.utils.ParametrosRep" Collapsed="true">
+    <Position X="4.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAACAAQAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\Constantes.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Calorias.src.utils.CanvasConfig" Collapsed="true">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\Constantes.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

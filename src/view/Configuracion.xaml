@@ -1,0 +1,41 @@
+﻿<Window x:Class="Calorias.src.view.Configuracion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calorias.src.view"
+        mc:Ignorable="d"
+        Title="Configuracion" Height="220" Width="200" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <WrapPanel Grid.Row="0">
+            <Label Content="CaloriasMax" Margin="5"/>
+            <TextBox Name="CaloriasMaxTextBox" Margin="5" Width="80" PreviewTextInput="CaloriasMaxTextBox_PreviewTextInput"/>
+        </WrapPanel>
+
+        <WrapPanel Grid.Row="1">
+            <Label Content="Seguimiento: " Margin="5"/>
+            <ComboBox Name="ComboBoxSeguimiento" Width="80" Height="30">
+                <ComboBoxItem IsSelected="True" Content="MENSUAL"  FontSize="12" ToolTip="A partir de la primera fecha introducida. Capacidad = 31 Graficas"/>
+                <ComboBoxItem Content="SEMANAL" ToolTip="A partir de la primera fecha introducida. Capacidad = 7 Graficas" FontSize="12"/>
+            </ComboBox>
+        </WrapPanel>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+           
+            <Button Name="Cancelar" Content= "Cancelar" Grid.Column="0" Click="Cancelar_Click"/>
+            <Button Name="Guardar" Content = "Guardar" Grid.Column="1" Click="Guardar_Click"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
